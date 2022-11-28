@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+def exchange(request):
+    name= 'mr'
+
+    context = {
+        'name' : name
+    }
+
+    return render(request=request,template_name='exchange/index.html',context=context)
